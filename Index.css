@@ -9,11 +9,9 @@ html{
 }
 
 body{
-    background:#0f172a;
+    background:#122041;
     color:white;
 }
-
-/* Header */
 
 header{
     display:flex;
@@ -39,7 +37,6 @@ nav a:hover{
     color:#38bdf8;
 }
 
-/* Hero Section */
 
 .hero{
     min-height:85vh;
@@ -117,7 +114,7 @@ nav a:hover{
     border:5px solid #38bdf8;
 }
 
-/* Responsive */
+
 
 @media(max-width:900px){
 
@@ -179,9 +176,6 @@ nav a:hover{
     min-width:200px;
 }
 
-.project-card{
-    max-width:350px;
-}
 
 footer{
     text-align:center;
@@ -194,4 +188,9 @@ footer{
 .project-card:hover{
     transform:translateY(-8px);
     transition:0.3s;
+}
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px; 
 }
