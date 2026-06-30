@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz App Pro</title>
+<link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+
+<!-- LOGIN -->
+<div id="login-screen" class="login-box">
+    <h2>Quiz Login</h2>
+    <input type="text" id="username" placeholder="Enter Your Name">
+    <button onclick="startGame()">Start Quiz</button>
+</div>
+
+<!-- QUIZ -->
+<div class="quiz-container" style="display:none;">
+
+    <button onclick="toggleDark()">🌙 Dark Mode</button>
+
+    <h1>Quiz App (BY NAZISH)</h1>
+
+    <p id="timer">Time Left: 30</p>
+
+    <div id="bar">
+        <div id="progress-bar"></div>
+    </div>
+
+    <h2 id="question"></h2>
+
+    <div id="answer-buttons"></div>
+
+    <p id="progress"></p>
+
+    <button id="next-btn">Next</button>
+
+</div>
+
+<script src="quiz.js"></script>
+</body>
+</html>
